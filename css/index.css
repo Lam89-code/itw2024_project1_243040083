@@ -10,7 +10,7 @@
 
 body {
   background: linear-gradient(to right, #041c32, #2e0a57);
-  font-family: "Poppins";
+  font-family: "Poppins" sans-serif;
 }
 
 .logo {
