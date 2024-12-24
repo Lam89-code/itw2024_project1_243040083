@@ -211,6 +211,17 @@ body {
 
 
 
+/* Start Project */
+.zoom{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.zoom:hover{
+  transform: scale(1.2);
+  box-shadow: 0 8px 16px #000;
+}
+/* End Project */
+
 /* Start Footer */
 
 .footer .container .row .col > ul > li > a {
