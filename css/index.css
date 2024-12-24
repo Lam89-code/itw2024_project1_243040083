@@ -1,0 +1,229 @@
+.modal-body {
+  max-height: 70vh; 
+  overflow-y: auto; 
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+}
+
+body {
+  background: linear-gradient(to right,#041c32, #2e0a57);
+  font-family: "Poppins",;
+}
+
+.logo {
+  color: salmon;
+}
+
+/* Start Hero */
+.home {
+  margin-left: 70px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.home .content {
+  flex: 1 1 40rem;
+  padding-top: 1rem;
+  z-index: 1;
+}
+
+/* Start Image */
+.home .image {
+  flex: 1 1 40rem;
+  z-index: 1;
+}
+.home .image img {
+  width: 80%;
+  margin-left: 8rem;
+  border-radius: 10%;
+  cursor: pointer;
+  filter: grayscale(1);
+  transition: 1s;
+}
+
+.home .image img:hover {
+  filter: grayscale(0);
+}
+/* End Image */
+.home .content h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fff;
+}
+.home .content h2 span {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #fff;
+}
+.home .content p {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: 600;
+  padding: 1rem 0;
+}
+.home .content p span {
+  font-size: 2.5rem;
+  color: salmon;
+  font-weight: 600;
+  padding: 1rem 0;
+}
+.home .btn {
+  margin-top: 1rem;
+  position: absolute;
+  line-height: 0;
+  padding: 1.2rem 3rem;
+  border-radius: 1em;
+  transition: 0.5s;
+  color: #19267f;
+  background: #fff;
+  box-shadow: 0px 5px 18px #030b44;
+  font-family: "Nunito", sans-serif;
+}
+.home .btn span {
+  font-weight: 700;
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+}
+.home .btn i {
+  margin-left: 0.3rem;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+.home .btn:hover {
+  background: #19267f;
+  color: #fff;
+  box-shadow: 0px 5px 18px #fff;
+}
+.home .btn:hover i {
+  transform: translateX(5px);
+}
+
+/* Start Social Icon */
+.social {
+  position: relative;
+  margin-top: 9rem;
+}
+.social .social-icon {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.social .social-icon li {
+  display: inline-block;
+  margin-bottom: 14px;
+}
+.social-icon a {
+  font-size: 2rem;
+  display: inline-block;
+  line-height: 44px;
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border: 1px solid;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.social-icon a:active,
+.social-icon a:focus,
+.social-icon a:hover {
+  color: #fff;
+  background-color: #fff;
+}
+.social-icon a.github:hover {
+  background-color: #fff;
+  color: #19267f;
+}
+
+.social-icon a.linkedin:hover {
+  background-color: #fff;
+  color: #19267f;
+}
+
+.social-icon a.instagram:hover {
+  background-color: #fff;
+  color: #19267f;
+}
+/* End Social Icon */
+
+@media (max-width: 450px) {
+  .home .btn {
+    margin: 4rem 0;
+  }
+  .socials {
+    margin-top: 12rem;
+  }
+  .home .content p {
+    font-size: 2.2rem;
+  }
+  .home .content p span {
+    font-size: 2.2rem;
+  }
+}
+
+/* End Hero */
+
+/* Start Effect Navbar Hover Link */
+.nav-link {
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* End Effect Navbar Hover Link */
+
+
+
+/* Start Footer */
+
+.footer .container .row .col > ul > li > a {
+  color: #fff;
+  transition: all 0s;
+}
+
+.footer .container .row .col > ul > li > a:hover {
+  color: salmon;
+  transition: 0.4s;
+}
+
+hr{
+  color: #fff;
+}
+/* End Footer */
