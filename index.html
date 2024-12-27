@@ -18,7 +18,7 @@
   <body>
     <!-- Start Navbar -->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top" style="background: linear-gradient(to right,#04067a, #5d0303)">
+      <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top" style="background: linear-gradient(to right, #04067a, #5d0303)">
         <div class="container-fluid">
           <div data-aos="fade-right" data-aos-duration="1000">
             <a class="navbar-brand" href="#">Alam | <span class="logo">Informatics</span></a>
@@ -59,12 +59,13 @@
         </div>
       </nav>
     </header>
+    <br /><br />
     <!-- End Navbar -->
 
     <!-- Start Page Home -->
     <section class="home" id="home">
-      <div class="content" data-aos="fade-right" data-aos-duration="2000" >
-        <p class="border rounded w-50 p-3 fs-5 text-center" style="background: linear-gradient(to right, #04067a, #5d0303);">Welcome to my portofolio</p>
+      <div class="content" data-aos="fade-right" data-aos-duration="2000">
+        <p class="border rounded w-50 p-3 fs-5 text-center" style="background: linear-gradient(to right, #04067a, #5d0303)">Welcome to my portofolio</p>
         <h2>Hello! I'am Muhamad Nur Salam</h2>
         <p>I Am a Student Of <span class="typing-text" id="typed3"></span></p>
         <a href="cv/CV_Muhamad Nur Salam_Teknik Inormatika_Fakultas Teknik.pdf" class="btn"><span>Download CV</span></a>
@@ -86,6 +87,7 @@
         <img class="" src="img/hero1.png" alt="Gambar Muhamad Nur Salam" />
       </div>
     </section>
+    <br /><br />
     <!-- End Page Home -->
 
     <!-- Start About, Education, Skills -->
@@ -318,19 +320,19 @@
               </ul>
             </div>
             <div class="col">
-              <div class="mb-3">
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nama" />
-              </div>
-              <div class="mb-3">
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email" />
-              </div>
-              <div class="mb-3">
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Subjek" />
-              </div>
-              <div class="mb-3">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Isi Pesan"></textarea>
-              </div>
-              <button type="button" class="btn btn-outline-light">Kirim 📩</button>
+              <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="8e4ad78a-6fa2-49bf-9b2b-bc3dbbf7abf9" />
+                <div class="mb-3">
+                  <input type="text" name="name" class="contact-inputs" placeholder="Nama" required/>
+                </div>
+                <div class="mb-3">
+                  <input type="email" name="email" class="contact-inputs" placeholder="Email" required/>
+                </div>
+                <div class="mb-3">
+                  <textarea name="message" class="contact-inputs" rows="3" placeholder="Isi Pesan" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-outline-light">Kirim 📩</button>
+              </form>
             </div>
           </div>
           <hr />
