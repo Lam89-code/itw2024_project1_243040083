@@ -18,7 +18,7 @@
   <body>
     <!-- Start Navbar -->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top" style="background-image: url(img/banner-bg.png)">
+      <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top">
         <div class="container-fluid">
           <div data-aos="fade-right" data-aos-duration="1000">
             <a class="navbar-brand" href="#">Alam | <span class="logo">Informatics</span></a>
@@ -34,20 +34,12 @@
               <li class="nav-item">
                 <a class="nav-link text-light" href="#about">About</a>
               </li>
-
-              <!-- Start Dropdown -->
               <li class="nav-item">
-                <div class="dropdown">
-                  <a class="btn dropdown-toggle text-light" href="#service" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"> Service </a>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <li><a class="dropdown-item" href="#archivments">Archivments</a></li>
-                    <li><a class="dropdown-item" href="#gallery">Gallery</a></li>
-                    <li><a class="dropdown-item" href="#experience">Experience</a></li>
-                  </ul>
-                </div>
+                <a class="nav-link text-light" href="#experience">Experience</a>
               </li>
-              <!-- End Dropdown -->
-
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#gallery">Gallery</a>
+              </li>
               <li class="nav-item">
                 <a class="nav-link text-light" href="#project">Project</a>
               </li>
@@ -64,12 +56,12 @@
 
     <!-- Start Page Home -->
     <section class="home" id="home">
-      <div class="content" data-aos="fade-right" data-aos-duration="2000">
-        <p class="border rounded w-50 p-3 fs-5 text-center" style="background: linear-gradient(to right, #04067a, #5d0303)">Welcome to my portofolio</p>
-        <h2>Hello! I'am Muhamad Nur Salam</h2>
-        <p>I Am a Student Of <span class="typing-text" id="typed3"></span></p>
-        <a href="cv/CV_Muhamad Nur Salam_Teknik Inormatika_Fakultas Teknik.pdf" class="btn"><span>Download CV</span></a>
-        <div class="social">
+      <div class="content">
+        <p data-aos="fade-left" data-aos-duration="2000" class="border rounded w-50 p-3 fs-5 text-center" style="background: linear-gradient(to right, #04067a, #f26b0f)">Welcome to my portofolio</p>
+        <h2 data-aos="fade-right" data-aos-duration="2000">Hello! I'am Muhamad Nur Salam</h2>
+        <p data-aos="fade-left" data-aos-duration="2000">I Am a Student Of <span class="typing-text" id="typed3"></span></p>
+        <a href="cv/CV_Muhamad Nur Salam_Teknik Inormatika_Fakultas Teknik.pdf" class="btn" data-aos="fade-right" data-aos-duration="2000"><span>Download CV</span></a>
+        <div class="social" data-aos="fade-up" data-aos-duration="2000">
           <ul class="social-icon">
             <li>
               <a class="linkedin" aria-label="Linkedin" href="https://www.linkedin.com/in/muhamadnursalam"><i class="fab fa-linkedin"></i></a>
@@ -91,12 +83,12 @@
 
     <!-- Start About, Education, Skills -->
     <section class="aboutme" id="about">
-      <div data-aos="fade-up" data-aos-duration="2000" class="text-white rounded-top-5 border-0" style="background-color: #021526">
-        <h2 class="text-center" id="about">About Me 🧑‍💻</h2>
+      <div class="text-white rounded-top-5 border-0" style="background-color: #0b192c">
+        <h2 class="text-center" style="color: #ec8305" id="about" data-aos="zoom-in-down" data-aos-duration="1000">About Me 🧑‍💻</h2>
         <br />
         <div class="container">
           <div class="row justify-content-center">
-            <div class="text-center">
+            <div class="text-center" data-aos="fade-left" data-aos-duration="2000">
               <p>
                 Saya adalah mahasiswa Teknik Informatika di Universitas Pasundan Bandung dengan ketertarikan di bidang web programming dan cyber security. Sebagai seseorang yang suka belajar secara otodidak, saya selalu berusaha
                 mengembangkan keterampilan agar tetap up-to-date dengan teknologi terbaru. Saya juga termotivasi oleh prinsip Tuan Krab, 'Uang lebih manis dari madu', yang mendorong saya untuk terus berinovasi dan bekerja keras.
@@ -104,23 +96,81 @@
             </div>
           </div>
           <br />
+
+          <!-- Start Education -->
+          <div class="row">
+            <section data-aos="fade-right" data-aos-duration="2000" class="col">
+              <h2 class="text-center">Education</h2>
+              <div class="contents">
+                <div class="box">
+                  <h4 class="fs-5">2018-2021</h4>
+                  <h3>SMP Negeri 1 Cidaun</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non officiis eum molestias eius mollitia officia voluptatibus odit distinctio sequi, accusantium vitae nostrum optio pariatur provident libero eveniet ex placeat
+                    aliquam?
+                  </p>
+                </div>
+
+                <div class="box">
+                  <h4 class="fs-5">2021-2024</h4>
+                  <h3>SMK Negeri 1 Cidaun</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non officiis eum molestias eius mollitia officia voluptatibus odit distinctio sequi, accusantium vitae nostrum optio pariatur provident libero eveniet ex placeat
+                    aliquam?
+                  </p>
+                </div>
+
+                <div class="box">
+                  <h4 class="fs-5">2024-Present</h4>
+                  <h3>Universitas Pasundan</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non officiis eum molestias eius mollitia officia voluptatibus odit distinctio sequi, accusantium vitae nostrum optio pariatur provident libero eveniet ex placeat
+                    aliquam?
+                  </p>
+                </div>
+              </div>
+            </section>
+            <section data-aos="fade-left" data-aos-duration="2000" class="col" id="experience">
+              <h2 class="text-center">Work Experience</h2>
+              <div class="contents">
+                <div class="box">
+                  <h4>Teknisi Komputer & Digital Marketing</h4>
+                  <h3>Bandung Electronic Center <br />Jan 2023 - Marc 2023</h3>
+                  <p>
+                    Melakukan perbaikan dan pemeliharaan komputer, termasuk instalasi hardware dan software, serta pemecahan masalah perangkat. Menangani penjualan laptop baru dan bekas, memberikan rekomendasi produk yang sesuai dengan
+                    kebutuhan pelanggan. Bekerja secara kolaboratif dalam tim untuk memastikan kualitas produk dan penyelesaian pesanan tepat waktu.
+                  </p>
+                </div>
+
+                <div class="box">
+                  <h4>Desainer Produk Fisik</h4>
+                  <h3>Unit Produksi SMK Negeri 1 Cidaun <br />Mei 2023 - Jan 2024</h3>
+                  <p>
+                    Membuat berbagai produk gantungan kunci dari akrilik serta piala untuk keperluan sekolah dan acara. Menangani proses penjualan produk, termasuk pemasaran, pelayanan pelanggan, dan pengelolaan transaksi. Melayani
+                    konsultasi teknis kepada pelanggan terkait dengan penggunaan dan troubleshooting perangkat. Melakukan uji coba perangkat untuk memastikan kualitas sebelum diserahkan kepada pelanggan.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- End Education -->
           <!-- Start Skills -->
-          <h2 class="text-center" id="skills">Skills ⚙️</h2>
+          <h2 class="text-center" style="color: #e85c0d" id="skills" data-aos="zoom-in-down" data-aos-duration="2000">Skills ⚙️</h2>
           <br />
           <div class="card-group h-50 d-inline-block text-center" style="width: 100%; height: 200px">
-            <div class="card mb-3 rounded-circle h-25 d-inline-block" style="width: 120px">
+            <div class="card mb-3 rounded-circle h-25 d-inline-block" style="width: 120px" data-aos="fade-right" data-aos-duration="3000">
               <img src="img/figma.png" class="card-img-top rounded-circle" alt="Figma" />
             </div>
-            <div class="card rounded-circle h-25 d-inline-block" style="width: 120px">
+            <div class="card rounded-circle h-25 d-inline-block" style="width: 120px" data-aos="fade-right" data-aos-duration="2000">
               <img src="img/coreldraw (2).jpeg" class="card-img-top rounded-circle" alt="CorelDraw" />
             </div>
-            <div class="card rounded-circle h-25 d-inline-block" style="width: 120px">
+            <div class="card rounded-circle h-25 d-inline-block" style="width: 120px" data-aos="zoom-in-down" data-aos-duration="2000">
               <img src="img/canva (2).jpeg" class="card-img-top rounded-circle" alt="Canva" />
             </div>
-            <div class="card rounded-circle h-25 d-inline-block" style="width: 120px">
+            <div class="card rounded-circle h-25 d-inline-block" style="width: 120px" data-aos="fade-left" data-aos-duration="2000">
               <img src="img/Logo Teknisi komputer.jpeg" class="card-img-top rounded-circle" alt="Teknisi Kompputer" />
             </div>
-            <div class="card rounded-circle h-25 d-inline-block" style="width: 120px">
+            <div class="card rounded-circle h-25 d-inline-block" style="width: 120px" data-aos="fade-left" data-aos-duration="3000">
               <img src="img/word.jpeg" class="card-img-top rounded-circle" alt="Microsoft Office" />
             </div>
           </div>
@@ -131,16 +181,16 @@
     <!-- Start About, Education, Skills -->
 
     <!-- Start Project -->
-    <section class="project text-white" id="project">
+    <section class="project text-white" id="project" style="background-color: #0b192c">
       <br /><br />
       <div data-aos="fade-up" data-aos-duration="2000">
-        <h2 class="text-center">My Project ⚒️</h2>
+        <h2 class="text-center" style="color: #e85c0d">My Project ⚒️</h2>
         <br /><br />
         <div class="container text-start">
           <div class="row justify-content-center">
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card" style="width: 18rem">
-                <img src="img/canva.jpeg" class="card-img-top" alt="..." />
+                <img src="img/pproject2.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title fw-semibold">Lembaga Pendidikan Pencak Silat Kesatria Cidaun</h5>
                   <h6 class="card-subtitle mb-2 text-body-secondary">HTML, CSS, Java Script</h6>
@@ -178,55 +228,18 @@
     </section>
     <!-- End Project -->
 
-    <!-- Start Experince -->
-    <section class="project text-white" id="experience" style="background-color: #021526">
-      <br /><br />
-      <div data-aos="fade-up">
-        <h2 class="text-center">Work Experience</h2>
-        <br /><br />
-        <div class="container text-center">
-          <div class="row">
-            <div class="col">
-              <h5 style="color: salmon">Bandung Electronic Center</h5>
-              <p style="color: salmon">Teknisi Komputer & Digital Marketing</p>
-              <ul>
-                <p>
-                  Melakukan perbaikan dan pemeliharaan komputer, termasuk instalasi hardware dan software, serta pemecahan masalah perangkat. Menangani penjualan laptop baru dan bekas, memberikan rekomendasi produk yang sesuai dengan
-                  kebutuhan pelanggan. Bekerja secara kolaboratif dalam tim untuk memastikan kualitas produk dan penyelesaian pesanan tepat waktu.
-                </p>
-              </ul>
-            </div>
-          </div>
-          <br /><br />
-          <div class="row">
-            <div class="col">
-              <h5 style="color: salmon">Unit Produksi SMK Negeri 1 Cidaun</h5>
-              <p style="color: salmon">Desainer Produk Fisik</p>
-              <ul>
-                <p>
-                  Membuat berbagai produk gantungan kunci dari akrilik serta piala untuk keperluan sekolah dan acara. Menangani proses penjualan produk, termasuk pemasaran, pelayanan pelanggan, dan pengelolaan transaksi. Melayani konsultasi
-                  teknis kepada pelanggan terkait dengan penggunaan dan troubleshooting perangkat. Melakukan uji coba perangkat untuk memastikan kualitas sebelum diserahkan kepada pelanggan.
-                </p>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Experince -->
-
     <!-- Start Form Contact -->
-    <div class="contact-container" id="contact">
+    <div class="contact-container" id="contact" style="background-image: url(img/banner-bg.png)">
       <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
         <input type="hidden" name="access_key" value="8e4ad78a-6fa2-49bf-9b2b-bc3dbbf7abf9" />
         <div class="contact-left-title">
-          <h2>Get in touch 🚀</h2>
+          <h2 data-aos="fade-left" data-aos-duration="2000">Get in touch 🚀</h2>
           <hr />
         </div>
-        <input type="text" name="name" placeholder="Nama" class="contact-inputs" />
-        <input type="email" name="email" placeholder="Email" class="contact-inputs" />
-        <textarea name="text" class="contact-inputs" placeholder="Pesan"></textarea>
-        <button type="submit">Kirim 📩</button>
+        <input type="text" name="name" placeholder="Nama" class="contact-inputs" data-aos="fade-right" data-aos-duration="2000" />
+        <input type="email" name="email" placeholder="Email" class="contact-inputs" data-aos="fade-right" data-aos-duration="2000" />
+        <textarea name="text" class="contact-inputs" placeholder="Pesan" data-aos="fade-left" data-aos-duration="2000"></textarea>
+        <button type="submit" data-aos="zoom-in-right" data-aos-duration="2000">Kirim 📩</button>
       </form>
     </div>
     <!-- End Form Contact -->
@@ -249,7 +262,7 @@
               <ul type="square">
                 <li class="p-1 g-col-6"><a href="#home" class="text-decoration-none">Home</a></li>
                 <li class="p-1 g-col-6"><a href="#about" class="text-decoration-none">About</a></li>
-                <li class="p-1 g-col-6"><a href="#certificate" class="text-decoration-none">Certificate</a></li>
+                <li class="p-1 g-col-6"><a href="#experience" class="text-decoration-none">Experience</a></li>
                 <li class="p-1 g-col-6"><a href="#gallery" class="text-decoration-none">Gallery</a></li>
                 <li class="p-1 g-col-6"><a href="#project" class="text-decoration-none">Project</a></li>
                 <li class="p-1 g-col-6"><a href="#contact" class="text-decoration-none">Contact</a></li>

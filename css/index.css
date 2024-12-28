@@ -14,11 +14,43 @@ body {
   font-family: "Poppins" sans-serif;
 }
 
+/* Start Navbar */
+.navbar {
+  backdrop-filter: blur(30px);
+  color: #fff;
+}
 .logo {
-  color: #0D92F4;
+  color: #f26b0f;
 }
 
-/* Start Hero */
+.nav-link {
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* End Navbar*/
+
+/* Start Home */
 .home {
   margin-left: 70px;
   position: relative;
@@ -63,6 +95,7 @@ body {
   transform: scale(1.2);
 }
 /* End Image */
+
 .home .content h2 {
   font-size: 3rem;
   font-weight: 800;
@@ -81,7 +114,7 @@ body {
 }
 .home .content p span {
   font-size: 2.5rem;
-  color: #0D92F4;
+  color: #f26b0f;
   font-weight: 600;
   padding: 1rem 0;
 }
@@ -92,7 +125,7 @@ body {
   padding: 1.2rem 3rem;
   border-radius: 1em;
   transition: 0.5s;
-  color: #0D92F4;
+  color: #f26b0f;
   background: #fff;
   box-shadow: 0px 5px 18px #030b44;
   font-family: "Nunito", sans-serif;
@@ -108,7 +141,7 @@ body {
   transition: 0.3s;
 }
 .home .btn:hover {
-  background: #0D92F4;
+  background: #f26b0f;
   color: #fff;
   box-shadow: 0px 5px 18px #fff;
 }
@@ -153,17 +186,17 @@ body {
 }
 .social-icon a.github:hover {
   background-color: #fff;
-  color: #0D92F4;
+  color: #f26b0f;
 }
 
 .social-icon a.linkedin:hover {
   background-color: #fff;
-  color: #0D92F4;
+  color: #f26b0f;
 }
 
 .social-icon a.instagram:hover {
   background-color: #fff;
-  color: #0D92F4;
+  color: #f26b0f;
 }
 /* End Social Icon */
 
@@ -185,36 +218,78 @@ body {
     justify-content: center;
   }
 }
+/* End Home */
 
-/* End Hero */
+/* Start Education */
+.row {
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+}
+.col h2 {
+  color: #ec8305;
+  padding: 0px 0px 20px 30px;
+}
+.col .contents {
+  padding: 0px 30px;
+  border-left: 2px solid #fff;
+}
 
-/* Start Effect Navbar Hover Link */
-.nav-link {
+.col .contents .box {
   position: relative;
-  display: inline-block;
-  transition: color 0.3s;
+  padding: 20px;
+  border: 1px solid #0d54d8;
+  background-color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.4s;
+  margin-bottom: 20px;
 }
 
-.nav-link:hover {
-  color: #fff;
+.col .contents .box:hover {
+  box-shadow: 0px 5px 15px 0px #0d54d8;
+  border: 1px solid transparent;
 }
 
-.nav-link::after {
+.col .contents .box::before {
   content: "";
   position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  right: calc(100% + 24px);
+  top: 0;
   background-color: #fff;
-  transition: 0.3s;
+  border: 2px solid white;
 }
 
-.nav-link:hover::after {
-  width: 100%;
+.box h4 {
+  position: relative;
+  color: #0d54d8;
 }
 
-/* End Effect Navbar Hover Link */
+.box h3 {
+  font-size: 19px;
+  padding: 10px 0px 6px;
+  color: #444;
+}
+
+.box p {
+  line-height: 1.2;
+  color: #000;
+  font-size: 17px;
+}
+
+@media (max-width: 800px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+
+  .row .col:nth-child(2) {
+    margin-top: 30px;
+  }
+}
+/* End Education */
 
 /* Start Project */
 .card {
@@ -223,9 +298,10 @@ body {
 
 .card:hover {
   transform: scale(1.2);
-  box-shadow: 0 8px 16px #0D92F4;
+  box-shadow: 0 8px 16px #0d54d8;
 }
 /* End Project */
+
 /* Start Form Contact */
 .contact-container {
   height: 100vh;
@@ -242,7 +318,7 @@ body {
 }
 .contact-left-title h2 {
   font-weight: 600;
-  color: #0D92F4;
+  color: #ec8305;
   font-size: 40px;
   margin-bottom: 5px;
 }
@@ -250,7 +326,7 @@ body {
   border: none;
   width: 120px;
   height: 5px;
-  background-color: #0D92F4;
+  background-color: #ec8305;
   border-radius: 18px;
   margin-bottom: 20px;
 }
@@ -273,7 +349,7 @@ body {
 }
 
 .contact-inputs:focus {
-  border: 2px solid #0D92F4;
+  border: 2px solid #ec8305;
 }
 .contact-inputs::placeholder {
   color: #ccc;
@@ -289,12 +365,12 @@ body {
   border: 1px solid #fff;
   border-radius: 50px;
   box-shadow: 0px 5px 18px #6685be;
-  background: #0D92F4;
+  background: #ec8305;
   transition: 0.5s;
 }
 
 .contact-left button:hover {
-  background: linear-gradient(270deg, #0d54d8, #d8280d);
+  background: linear-gradient(270deg, #0d54d8, #f26b0f);
   box-shadow: 0px 5px 18px #fff;
 }
 
@@ -304,15 +380,15 @@ body {
   }
 }
 /* End Form Contact */
-/* Start Footer */
 
+/* Start Footer */
 .footer .container .row .col > ul > li > a {
   color: #fff;
   transition: all 0s;
 }
 
 .footer .container .row .col > ul > li > a:hover {
-  color: #5bacf6;
+  color: #ec8305;
   transition: 0.4s;
 }
 
