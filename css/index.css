@@ -15,7 +15,7 @@ body {
 }
 
 .logo {
-  color: salmon;
+  color: #0D92F4;
 }
 
 /* Start Hero */
@@ -81,7 +81,7 @@ body {
 }
 .home .content p span {
   font-size: 2.5rem;
-  color: salmon;
+  color: #0D92F4;
   font-weight: 600;
   padding: 1rem 0;
 }
@@ -92,7 +92,7 @@ body {
   padding: 1.2rem 3rem;
   border-radius: 1em;
   transition: 0.5s;
-  color: #19267f;
+  color: #0D92F4;
   background: #fff;
   box-shadow: 0px 5px 18px #030b44;
   font-family: "Nunito", sans-serif;
@@ -108,7 +108,7 @@ body {
   transition: 0.3s;
 }
 .home .btn:hover {
-  background: #19267f;
+  background: #0D92F4;
   color: #fff;
   box-shadow: 0px 5px 18px #fff;
 }
@@ -153,17 +153,17 @@ body {
 }
 .social-icon a.github:hover {
   background-color: #fff;
-  color: #19267f;
+  color: #0D92F4;
 }
 
 .social-icon a.linkedin:hover {
   background-color: #fff;
-  color: #19267f;
+  color: #0D92F4;
 }
 
 .social-icon a.instagram:hover {
   background-color: #fff;
-  color: #19267f;
+  color: #0D92F4;
 }
 /* End Social Icon */
 
@@ -181,7 +181,7 @@ body {
     font-size: 2.2rem;
   }
 
-  .prject>.container>.row>.col {
+  .prject > .container > .row > .col {
     justify-content: center;
   }
 }
@@ -223,10 +223,87 @@ body {
 
 .card:hover {
   transform: scale(1.2);
-  box-shadow: 0 8px 16px #0d54d8;
+  box-shadow: 0 8px 16px #0D92F4;
 }
 /* End Project */
+/* Start Form Contact */
+.contact-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
 
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+.contact-left-title h2 {
+  font-weight: 600;
+  color: #0D92F4;
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+.contact-left-title hr {
+  border: none;
+  width: 120px;
+  height: 5px;
+  background-color: #0D92F4;
+  border-radius: 18px;
+  margin-bottom: 20px;
+}
+
+.contact-inputs {
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color: #000;
+  border-radius: 50px;
+}
+
+.contact-left textarea {
+  height: 140px;
+  padding-top: 15px;
+  border-radius: 20px;
+}
+
+.contact-inputs:focus {
+  border: 2px solid #0D92F4;
+}
+.contact-inputs::placeholder {
+  color: #ccc;
+}
+
+.contact-left button {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: #fff;
+  gap: 10px;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  box-shadow: 0px 5px 18px #6685be;
+  background: #0D92F4;
+  transition: 0.5s;
+}
+
+.contact-left button:hover {
+  background: linear-gradient(270deg, #0d54d8, #d8280d);
+  box-shadow: 0px 5px 18px #fff;
+}
+
+@media (max-width: 800px) {
+  .contact-inputs {
+    width: 80vw;
+  }
+}
+/* End Form Contact */
 /* Start Footer */
 
 .footer .container .row .col > ul > li > a {
@@ -235,7 +312,7 @@ body {
 }
 
 .footer .container .row .col > ul > li > a:hover {
-  color: salmon;
+  color: #5bacf6;
   transition: 0.4s;
 }
 
