@@ -9,7 +9,8 @@
 }
 
 body {
-  background: linear-gradient(to right, #04067a, #5d0303);
+  background-image: url("../img/banner-bg.png");
+  background-size: center;
   font-family: "Poppins" sans-serif;
 }
 
@@ -51,7 +52,7 @@ body {
 .home .image img {
   width: 60%;
   margin-left: 4rem;
-  border-radius: 10%;
+  border-radius: 20%;
   cursor: pointer;
   filter: grayscale(1);
   transition: 1s;
@@ -60,7 +61,6 @@ body {
 .home .image img:hover {
   filter: grayscale(0);
   transform: scale(1.2);
-  box-shadow: 0 8px 16px #0d54d8;
 }
 /* End Image */
 .home .content h2 {
