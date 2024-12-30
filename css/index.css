@@ -17,12 +17,7 @@ body {
 /* Start Navbar */
 .navbar {
   backdrop-filter: blur(30px);
-  color: #fff;
 }
-.logo {
-  color: #f26b0f;
-}
-
 .nav-link {
   position: relative;
   display: inline-block;
