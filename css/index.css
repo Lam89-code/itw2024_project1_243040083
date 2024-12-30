@@ -5,7 +5,6 @@
 
 body {
   background-image: url("../img/banner-bg.png");
-  background-size: center;
   font-family: "Poppins" sans-serif;
 }
 
@@ -42,22 +41,9 @@ body {
 
 /* Start Home */
 .home {
-  margin-left: 70px;
-  position: relative;
-  display: flex;
+  margin-left: 8rem;
   flex-wrap: wrap;
-  gap: 1.5rem;
-  min-height: 100vh;
-  align-items: center;
-}
-
-.home::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+  min-height: 800px;
 }
 .home .content {
   flex: 1 1 40rem;
@@ -87,62 +73,26 @@ body {
 /* End Image */
 
 .home .content h2 {
-  font-size: 3rem;
-  font-weight: 800;
-  color: #fff;
-}
-.home .content h2 span {
-  font-size: 5rem;
-  font-weight: 800;
-  color: #fff;
-}
-.home .content p {
-  font-size: 2.5rem;
-  color: #fff;
-  font-weight: 600;
-  padding: 1rem 0;
-}
-.home .content p span {
-  font-size: 2.5rem;
-  color: #f26b0f;
-  font-weight: 600;
-  padding: 1rem 0;
+  font-size: 50px;
 }
 .home .btn {
-  margin-top: 1rem;
-  position: absolute;
   line-height: 0;
-  padding: 1.2rem 3rem;
-  border-radius: 1em;
+  padding: 18px 16px;
   transition: 0.5s;
   color: #f26b0f;
   background: #fff;
   box-shadow: 0px 5px 18px #030b44;
-  font-family: "Nunito", sans-serif;
 }
-.home .btn span {
-  font-weight: 700;
-  font-size: 1.7rem;
-  letter-spacing: 0.1rem;
-}
-.home .btn i {
-  margin-left: 0.3rem;
-  font-size: 1.5rem;
-  transition: 0.3s;
-}
+
 .home .btn:hover {
   background: #f26b0f;
   color: #fff;
   box-shadow: 0px 5px 18px #fff;
 }
-.home .btn:hover i {
-  transform: translateX(5px);
-}
 
 /* Start Social Icon */
 .social {
-  position: relative;
-  margin-top: 9rem;
+  margin-top: 90px;
 }
 .social .social-icon {
   padding-left: 0;
@@ -191,14 +141,14 @@ body {
 /* End Social Icon */
 
 @media (max-width: 450px) {
+  .home {
+    margin-left: 20px;
+  }
   .home .btn {
-    margin: 4rem 0;
+    margin: 10px 0;
   }
-  .socials {
-    margin-top: 12rem;
-  }
-  .home .content p {
-    font-size: 2.2rem;
+  .social {
+    margin-top: 100px;
   }
   .home .content p span {
     font-size: 2.2rem;
