@@ -366,12 +366,14 @@ body {
   border-radius: 50px;
   box-shadow: 0px 5px 18px #6685be;
   background: #ec8305;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .contact-left button:hover {
   background: linear-gradient(270deg, #0d54d8, #f26b0f);
   box-shadow: 0px 5px 18px #fff;
+  border: 1px solid #0d54d8;
+  transition: 1s;
 }
 
 @media (max-width: 800px) {
