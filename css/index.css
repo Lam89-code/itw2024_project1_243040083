@@ -191,18 +191,6 @@ body {
   border: 1px solid transparent;
 }
 
-.col .contents .box::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  right: calc(100% + 24px);
-  top: 0;
-  background-color: #fff;
-  border: 2px solid white;
-}
-
 .box h4 {
   position: relative;
   color: #0d54d8;
